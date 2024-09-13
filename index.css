@@ -5,15 +5,17 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: morion-regular, Arial, sans-serif;
 }
 
 .navbar {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: red;
-  padding: 15px;
+  padding: 0 10px;
 }
 
 .navbar a {
@@ -36,6 +38,8 @@ body {
 }
 
 .icon {
+  position: relative;
+  z-index: 20;
   display: none;
   font-size: 26px;
   cursor: pointer;
@@ -45,15 +49,51 @@ body {
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
+#hamburger-icon {
+  margin-right: auto;
+  font-size: 30px;
+}
+
+#pizza-bakgrund {
+  background-image: url(img/pizzeria-4918997_1280.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 40vw;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.shadow-border {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 0px black, /* Right shadow */ -2px 2px 0px black,
+    /* Left shadow */ 2px -2px 0px black,
+    /* Bottom shadow */ -2px -2px 0px black; /* Top shadow */
+}
+
+@media (max-width: 980px) {
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
     background-color: red;
     position: absolute;
-    top: 60px;
+    top: 95px;
     left: 0;
+    height: calc(100vh - 95px);
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .nav-links li {
