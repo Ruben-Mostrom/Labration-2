@@ -5,11 +5,14 @@
 }
 
 body {
-  font-family: morion-regular, Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -54,6 +57,12 @@ body {
   font-size: 30px;
 }
 
+/*så navbaren inte täker innehåll*/
+main {
+  padding-top: 95px;
+}
+
+/* bakgrunds bilden högst up på sidan*/
 #pizza-bakgrund {
   background-image: url(img/pizzeria-4918997_1280.jpg);
   display: flex;
@@ -61,7 +70,7 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
-  height: 40vw;
+  height: 50vw;
   width: 100%;
   background-size: cover;
   background-position: 50%;
@@ -69,19 +78,81 @@ body {
 }
 
 h1 {
-  color: white;
   position: relative;
   text-align: center;
 }
 
-.shadow-border {
+/* pizza meny */
+#meny {
+  padding: 20px;
+  text-align: center;
   font-size: 2rem;
+}
+
+.meny-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meny-lista li {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+#ring-oss {
+  text-align: center;
+  margin: 30px;
+}
+
+/* svart border till texten */
+.shadow-border {
+  font-size: 5vw;
   color: white;
   text-shadow: 2px 2px 0px black, /* Right shadow */ -2px 2px 0px black,
     /* Left shadow */ 2px -2px 0px black,
     /* Bottom shadow */ -2px -2px 0px black; /* Top shadow */
 }
 
+/*Footer längst ner på sidan*/
+footer {
+  background-color: red;
+  color: white;
+}
+/* använder grid för placering */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Två lika stora kolumner */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centrera footern */
+  padding: 20px;
+}
+
+.footer-section {
+  font-size: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  margin-bottom: 16px;
+}
+
+.address,
+.telefon,
+.tid,
+.lunch {
+  display: block; /* Gör att varje adressrad, telefonnummer och lunchtider hamnar på en ny rad */
+  margin-top: 4px; /* Justera utrymme ovanför varje rad */
+}
+
+/*navbar för liten skärm + hamburgur meny*/
 @media (max-width: 980px) {
   .nav-links {
     display: none;
@@ -106,7 +177,7 @@ h1 {
   }
 
   .navbar {
-    position: relative;
+    position: fixed;
   }
 }
 
@@ -114,4 +185,8 @@ h1 {
   display: flex !important;
 }
 
-/*desktop version */
+/* om oss.html texten-*/
+#om-oss-beskriving {
+  padding: 10%;
+  text-align: center;
+}
