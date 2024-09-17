@@ -62,9 +62,23 @@ main {
   padding-top: 95px;
 }
 
-/* bakgrunds bilden högst up på sidan*/
-#pizza-bakgrund {
+/* bakgrunds bilden högst up på hemsidan*/
+#resturang-bakgrund {
   background-image: url(img/pizzeria-4918997_1280.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 50vw;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+#pizza-bakgrund {
+  background-image: url(img/pizza-background_1280.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,26 +97,48 @@ h1 {
 }
 
 /* pizza meny */
-#meny {
-  padding: 20px;
+.meny {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.meny h2 {
   text-align: center;
-  font-size: 2rem;
+  margin: 30px;
 }
 
-.meny-lista {
-  list-style: none;
-  padding: 0;
+.menyartikel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 20px;
+}
+
+/* tarbort border-bottom på sista artikeln */
+.menyartikel:last-child {
+  border-bottom: none;
+}
+
+.artikelinfo h3 {
   margin: 0;
+  font-size: 1.2em;
 }
 
-.meny-lista li {
-  font-size: 1.5rem;
-  margin: 10px 0;
-  color: #333;
+.artikelinfo p {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+  color: black;
+}
+
+.artikelpris {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #ring-oss {
   text-align: center;
+  line-height: 3rem;
   margin: 30px;
 }
 

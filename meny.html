@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Rubens Pizzeria</title>
+    <!--Bild taggen från pixabay, tack OpenClipart-Vectors, komprimerad till 32 x 21 pixlar-->
+    <link rel="icon" href="img/" type="image/icon type" />
+  </head>
+  <body>
+    <header>
+      <!--navbar + hamburger meny-->
+      <nav class="navbar">
+        <a href="javascript:void(0);" class="icon" id="hamburger-icon">
+          &#9776;
+        </a>
+        <a href="index.html">
+          <img src="img/food-7248455_640.png" alt="pizza" class="logo" />
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="meny.html">Meny</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!--java scripten till hamburger meny-->
+      <script src="script.js"></script>
+    </header>
+    <main>
+      <!--Bakgrundbild och text-->
+      <section id="pizza-bakgrund"></section>
+
+      <!--Pizza meny-->
+      <section class="meny">
+        <h2><u>Meny</u></h2>
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Margherita</h3>
+            <p>Ost, Tomatsås</p>
+          </div>
+          <span class="artikelpris">115 kr</span>
+        </article>
+
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Vesuvio</h3>
+            <p>Ost, Tomatsås, skinka</p>
+          </div>
+          <span class="artikelpris">115 kr</span>
+        </article>
+
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Cacciatore</h3>
+            <p>Ost, Tomatsås, salami, lök</p>
+          </div>
+          <span class="artikelpris">120 kr</span>
+        </article>
+
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Marinara</h3>
+            <p>Ost, Tomatsås, räkor, musslor</p>
+          </div>
+          <span class="artikelpris">120 kr</span>
+        </article>
+
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Hawaii</h3>
+            <p>Ost, Tomatsås, skinka, ananas</p>
+          </div>
+          <span class="artikelpris">125 kr</span>
+        </article>
+
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Kanon</h3>
+            <p>Ost, Tomatsås, bacon, salami, ägg</p>
+          </div>
+          <span class="artikelpris">125 kr</span>
+        </article>
+
+        <article class="menyartikel">
+          <div class="artikelinfo">
+            <h3>Siciliana</h3>
+            <p>Ost, Tomatsås, räkor, krabba, kaviar, citron</p>
+          </div>
+          <span class="artikelpris">135 kr</span>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <!--kapslar in hela footern-->
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Rubens Pizzeria</h3>
+          <p>
+            <strong>Adress:</strong>
+            <span class="address">Rubenvägen 84</span>
+            <span class="address">1337 Stockholm</span>
+          </p>
+          <p>
+            <strong>Telefon:</strong>
+            <span class="telefon">08-22 222 2222</span>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Öppettider</h3>
+          <p>
+            <strong>Måndag-Lördag:</strong>
+            <span class="tid">11:00 - 21:00</span>
+          </p>
+          <p>
+            <strong>Lunch:</strong>
+            <span class="lunch">Vardagar 10:00 - 14:00</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
