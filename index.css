@@ -6,6 +6,9 @@
 
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* sidan tar upp hela höjden */
 }
 
 .navbar {
@@ -36,6 +39,11 @@ body {
   align-self: center;
 }
 
+.nav-links a:hover {
+  color: black;
+  border-bottom: 1px solid white;
+}
+
 .nav-links li {
   margin-right: 10px;
 }
@@ -60,6 +68,7 @@ body {
 /*så navbaren inte täker innehåll*/
 main {
   padding-top: 95px;
+  flex-grow: 1; /* main tar upp all tillgänglig plats */
 }
 
 /* bakgrunds bilden högst up på hemsidan*/
@@ -190,6 +199,7 @@ h1 {
 footer {
   background-color: red;
   color: white;
+  text-align: center;
 }
 /* använder grid för placering */
 .footer-container {
@@ -249,6 +259,10 @@ footer {
 
   .navbar {
     position: fixed;
+  }
+
+  .navbar a:hover {
+    border-bottom: none;
   }
 }
 
