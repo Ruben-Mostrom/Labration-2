@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: #b00000;
   padding: 0 10px;
 }
 
@@ -114,6 +114,11 @@ h1 {
   margin: 0 auto;
 }
 
+.meny h1 {
+  text-align: center;
+  margin: 30px;
+}
+
 .meny h2 {
   text-align: center;
   margin: 30px;
@@ -200,7 +205,7 @@ h1 {
 
 /*Footer längst ner på sidan*/
 footer {
-  background-color: red;
+  background-color: #b00000;
   color: white;
   text-align: center;
 }
@@ -258,7 +263,7 @@ footer {
 }
 
 .bild-låda a {
-  color: red;
+  color: #b00000;
 }
 
 .bild-låda h3 {
@@ -276,7 +281,7 @@ footer {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: red;
+    background-color: #b00000;
     position: absolute;
     top: 95px;
     left: 0;
@@ -322,3 +327,4 @@ footer {
   padding: 10%;
   text-align: center;
 }
+/*Koden är validerad i W3C med inga fel*/
